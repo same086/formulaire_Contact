@@ -1,0 +1,96 @@
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #dee2e6;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #6c757d;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  /* Mon charte de couleur graphique */
+  --darkgray: #212329;
+  --brightred: #f9423d;
+  --white: #fff;
+  --lightred: #f9433dcc;
+}
+
+
+body {
+  font-family: "Vareta Round", sans-serif;
+  background-color: var(--bs-dark);
+}
+.form {
+  background-color: linear-gradient(#1391ff, #0145ff);
+  width: 400px;
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 16px;
+  padding: 120px 50px;
+  /* l'effet zoom avant du formalaire */
+  box-shadow: 2px 2px 8px #000000ab;
+  z-index: 1;
+}
+.img-overlay::before {
+  content: "";
+  background-image: url("https: //cdn.pixabay.com/ 9px / 6px / 13px / 18px /mosaic -2721424_ 960_ 720jpg");
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.18;
+  width: 400px;
+  height: 600px;
+  border-radius: 16px;
+  z-index: -1;
+}
+
+.icon-close {
+  position: absolute;
+  right: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.form h1 {
+  color: #fff;
+  font-size: 1rem;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: antiquewhite;
+  margin-bottom: 1.5rem;
+  font-size: 0.7rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.7rem;
+  border-bottom: 1px solid rgba(231, 231, 231, 0.8);
+}
